@@ -10,7 +10,8 @@
     "build": "tsc",
     "clean": "rm -v ./next.json && rm -rf ./lib",
     "clean:all": "rm -rf ./lib ./next.json ./snapshot.csv",
-    "start": "node ./lib/index.js",
+    "daemon": "node_modules/.bin/ts-node ./src/daemon.ts",
+    "start": "yarn run build && node ./lib/index.js",
     "dev": "node_modules/.bin/ts-node ./src/index.ts"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "dotenv": "^10.0.0",
     "envalid": "^7.2.2",
     "ethers": "^5.5.2",
+    "eventemitter3": "^4.0.7",
     "moment": "^2.29.1",
     "winston": "^3.3.3"
   }
