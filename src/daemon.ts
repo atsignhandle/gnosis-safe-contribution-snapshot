@@ -20,7 +20,8 @@ const SAFE_DEPLOYED_IN_BLOCK = 9360414;
 const SAFE_ADDRESS = `0x6b175474e89094c44da98b954eedeac495271d0f`;
 logger.info(`${NODE_ENV}, ${SAFE_ADDRESS}, ${SAFE_DEPLOYED_IN_BLOCK}`);
 logger.info(
-  `development and testing used DAI addresses, deployed version to use address of interest and block range of interest`,
+  `development and testing used DAI addresses, ` + 
+  `deployed version to use address of interest and block range of interest`,
 );
 logger.info(`with the final or current block watched`);
 
