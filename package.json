@@ -1,0 +1,34 @@
+{
+  "name": "gnosis-safe-contribution-snapshot",
+  "version": "1.0.0",
+  "description": "Snapshots ETH contributions to a Gnosis Safe",
+  "main": "./lib/index.js",
+  "repository": "https://github.com/atsignhandle/gnosis-safe-contribution-snapshot",
+  "author": "@",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -v ./next.json && rm -rf ./lib",
+    "clean:all": "rm -rf ./lib ./next.json ./snapshot.csv",
+    "start": "node ./lib/index.js",
+    "dev": "node_modules/.bin/ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "eslint": "^8.3.0",
+    "eslint-config-next": "^12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "csv": "^6.0.4",
+    "dotenv": "^10.0.0",
+    "envalid": "^7.2.2",
+    "ethers": "^5.5.2",
+    "moment": "^2.29.1",
+    "winston": "^3.3.3"
+  }
+}
